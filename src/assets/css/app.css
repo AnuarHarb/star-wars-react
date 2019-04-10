@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: starjedi;
+  src: url('../fonts/starjedi.ttf');
+  font-display: swap;
+}
+
+body {
+  background-color: black;
+  font-family: starjedi;
+}
