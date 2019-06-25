@@ -77,11 +77,11 @@ class GameContainer extends Component {
   }
 
   updateScore(winner) {
-    if(winner == 'player1') {
+    if(winner === 'player1') {
       this.setState({
         scorePlayer1: this.state.scorePlayer1 + 1
       });
-    } else if(winner == 'player2') {
+    } else if(winner === 'player2') {
       this.setState({
         scorePlayer2: this.state.scorePlayer2 + 1
       });
@@ -99,7 +99,7 @@ class GameContainer extends Component {
       <GameContainerStyles>
         {this.state.status === 'choosing' ? (
           <section className="choosing-section">
-            <h1>Piedra Papel o Tijeras</h1>
+            <h1>Rock, paper, scissors</h1>
             <section className="main">
               <CardContainer
                 clickHandler={this.play}
